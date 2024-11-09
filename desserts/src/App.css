@@ -76,13 +76,13 @@ div.card{
 div.card-image{
   position: relative;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
 }
 
 div.card-image > img{
   display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 5 /4;
   border-radius: 8px;
 }
 div.addcart{
@@ -166,7 +166,11 @@ div.card-content > p:nth-of-type(3){
     align-self: stretch;
     background-color: white;
     transform: translateY(0%);
-}
+  }
+  div.card-image > img{
+    aspect-ratio: 5 /3;
+  }
+
 }
 
 /* Mobile */
