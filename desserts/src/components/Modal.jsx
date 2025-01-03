@@ -45,7 +45,7 @@ export default function Modal({cartItems,setIsModalVisible, total, dispatch}) {
                 Order Confirmed
             </p>
             <p className='text-xs text-[#bba7a2] mb-6'>We hope you enjoyed your food!</p>
-            <div className='bg-[#fcf8f6] rounded-lg p-4'>
+            <div className='bg-[#fcf8f6] rounded-lg p-4 max-h-[200px] md:max-h-[316px] overflow-y-auto'>
                 {
                     cartItems.map((item,idx)=>{
                         return (
@@ -59,8 +59,8 @@ export default function Modal({cartItems,setIsModalVisible, total, dispatch}) {
                                 </div>
                                 <div className='flex-1 flex flex-row items-center justify-between'>
                                     <div>
-                                        <p className='text-lg font-semibold mb-1'>{item.name}</p>
-                                        <p><span className='text-base text-[#c73b0f] mr-4'>{item.amount}x</span><span className='text-base text-[#bba7a2]'>@ {item.price}</span> </p>
+                                        <p className='text-base md:text-lg font-semibold mb-1'>{item.name}</p>
+                                        <p><span className='text-sm md:text-base text-[#c73b0f] mr-2 md:mr-4'>{item.amount}x</span><span className='text-base text-[#bba7a2]'>@ {item.price}</span> </p>
                                     </div>
                                     <p>${item.price}</p>
                                 </div>

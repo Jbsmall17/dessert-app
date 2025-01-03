@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             : (
               <div>
-              <ul>
+              <ul className="ul-list max-h-[186px] overflow-y-auto">
                 {
                   cartDetails.cartItems.map(({name,price,amount},idx)=>{
                     return (
